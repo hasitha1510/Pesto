@@ -1,0 +1,259 @@
+/* =====================
+   GLOBAL
+===================== */
+* {
+  box-sizing: border-box;
+  font-family: "Baloo 2", cursive;
+}
+
+body {
+  margin: 0;
+  background: #EFE8E0;
+  color: #2b2b2b;
+}
+
+/* =====================
+   LAYOUT
+===================== */
+.checkout-container {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+/* =====================
+   LEFT SECTION
+===================== */
+.checkout-left h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1.8rem;
+  color: #B21A1A;
+}
+
+/* CARD */
+.checkout-card {
+  background: #fff;
+  padding: 1.8rem;
+  border-radius: 20px;
+  margin-bottom: 1.8rem;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.checkout-card h3 {
+  margin-bottom: 1.2rem;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+/* INPUTS */
+.checkout-card input,
+.checkout-card textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 999px;
+  border: 1px solid #ddd;
+  font-size: 0.95rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.checkout-card textarea {
+  border-radius: 16px;
+  height: 90px;
+  resize: none;
+}
+
+.checkout-card input:focus,
+.checkout-card textarea:focus {
+  outline: none;
+  border-color: #B21A1A;
+  box-shadow: 0 0 0 2px rgba(178,26,26,0.15);
+}
+
+/* =====================
+   PAYMENT OPTIONS
+===================== */
+.checkout-card label {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
+  margin-bottom: 0.7rem;
+  border: 1px solid #eee;
+  cursor: pointer;
+  transition: background 0.3s ease, border 0.3s ease;
+}
+
+.checkout-card label:hover {
+  background: #fff6e0;
+}
+
+.checkout-card input[type="radio"] {
+  accent-color: #B21A1A;
+}
+
+/* =====================
+   PAY BUTTON
+===================== */
+.pay-btn {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #fdb813, #f4a900);
+  font-weight: 700;
+  font-size: 1.05rem;
+  cursor: pointer;
+  box-shadow: 0 12px 30px rgba(253, 184, 19, 0.4);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.pay-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 40px rgba(253, 184, 19, 0.55);
+}
+
+
+/* =====================
+   RIGHT: ORDER SUMMARY
+===================== */
+.checkout-right {
+  background: #fff;
+  padding: 1.8rem;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  height: fit-content;
+  position: sticky;
+  top: 2rem;
+}
+
+.checkout-right h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+  color: #333;
+}
+
+/* ORDER ITEMS */
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.9rem;
+  font-size: 0.95rem;
+}
+
+.order-item span {
+  color: #555;
+}
+
+/* TOTAL */
+.order-total {
+  border-top: 1px dashed #ddd;
+  padding-top: 1.2rem;
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #B21A1A;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+  .checkout-container {
+    grid-template-columns: 1fr;
+  }
+
+  .checkout-left h2 {
+    text-align: center;
+  }
+}
+
+
+/* ORDER ITEMS WITH IMAGES */
+.order-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.order-item {
+  display: grid;
+  grid-template-columns: 60px 1fr auto;
+  gap: 0.8rem;
+  align-items: center;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px dashed #eee;
+}
+
+.order-item img {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.order-info h4 {
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.order-info p {
+  font-size: 0.8rem;
+  color: #777;
+  margin: 0.2rem 0 0;
+}
+
+.order-price {
+  font-weight: 700;
+  color: #B21A1A;
+}
+
+
+/* =====================
+   PAYMENT METHOD STYLING
+===================== */
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 1rem 1.2rem;
+  border-radius: 16px;
+  border: 2px solid #eee;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  background: #fff;
+}
+
+.payment-option:hover {
+  border-color: #fdb813;
+  background: #fff7e0;
+}
+
+.payment-option input {
+  accent-color: #fdb813;
+  transform: scale(1.2);
+}
+
+.payment-option label {
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Highlight selected option */
+.payment-option input:checked + label {
+  color: #c62828;
+}
+
+.payment-option:has(input:checked) {
+  border-color: #fdb813;
+  background: #fff4d6;
+}
