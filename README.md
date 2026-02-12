@@ -3,6 +3,7 @@
 📖 Overview
 
 Pesto is a responsive food ordering frontend web application built using HTML, CSS, and vanilla JavaScript.
+
 The project simulates a real-world food ordering flow by allowing users to browse items, add them to a cart, and proceed through a checkout process — all without a backend.
 
 The core focus of this project is frontend state management using browser localStorage, ensuring cart data persists across page refreshes and sessions.
@@ -25,10 +26,15 @@ The core focus of this project is frontend state management using browser localS
 ✨ Key Features
 
 ✔️ Clean and responsive food ordering UI
+
 ✔️ Interactive Add to Cart functionality
+
 ✔️ Cart state persists using browser localStorage
+
 ✔️ Checkout and delivery details flow
+
 ✔️ Items remain in cart until user manually removes them
+
 ✔️ Fully client-side implementation (no backend)
 
 🧠 What This Project Demonstrates
@@ -45,14 +51,21 @@ The core focus of this project is frontend state management using browser localS
 
 📂 Project Structure
 Pesto/
-├── index.html          # Home & menu page
-├── cart.html           # Cart page
-├── checkout.html       # Delivery details page
+├── index.html    
+
+├── cart.html           
+
+├── checkout.html       
+
 ├── css/
-│   └── styles.css      # Styling
+
+│   └── styles.css      
+
 ├── js/
-│   └── script.js       # Core application logic
-└── assets/             # Images and icons
+
+│   └── script.js       
+
+└── assets/             
 
 💾 Cart Persistence Logic
 
@@ -67,8 +80,11 @@ This ensures a session-independent shopping experience.
 📈 Future Enhancements
 
 🔹 Quantity increment and decrement controls
+
 🔹 Dynamic price calculation and order summary
+
 🔹 UI/UX improvements for cart page
+
 🔹 Migration to React for scalable state management
 
 👩‍💻 Author
