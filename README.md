@@ -1,89 +1,75 @@
-🍝 Pesto – Food Ordering Frontend Application
+🍝 Pesto — Food Ordering Frontend Application
 
-📌 Overview
+📖 Overview
 
-Pesto is a responsive food ordering frontend application built using HTML, CSS, and vanilla JavaScript.
+Pesto is a responsive food ordering frontend web application built using HTML, CSS, and vanilla JavaScript.
+The project simulates a real-world food ordering flow by allowing users to browse items, add them to a cart, and proceed through a checkout process — all without a backend.
 
-The project focuses on implementing a realistic cart and checkout flow entirely on the client side, without using any backend.
+The core focus of this project is frontend state management using browser localStorage, ensuring cart data persists across page refreshes and sessions.
 
-Users can browse food items, add them to the cart, proceed to delivery details, and manage their cart with persistent state using browser localStorage.
+🌐 Live Demo
 
-🚀 Live Demo
-
-🔗 Live Project:
-https://hasitha1510.github.io/Pesto/
+🔗 Project Link:
+👉 https://hasitha1510.github.io/Pesto/
 
 🛠️ Tech Stack
 
-HTML5 – Structure and layout
+🧱 HTML5 — Semantic structure and layout
 
-CSS3 – Styling and responsive design
+🎨 CSS3 — Responsive design and styling
 
-JavaScript (Vanilla JS) – Application logic and interactivity
+⚙️ JavaScript (Vanilla) — Dynamic behavior & DOM manipulation
 
-Browser localStorage – Cart state persistence
+💾 localStorage API — Persistent client-side cart storage
 
-✨ Features
+✨ Key Features
 
-Responsive food ordering UI
+✔️ Clean and responsive food ordering UI
+✔️ Interactive Add to Cart functionality
+✔️ Cart state persists using browser localStorage
+✔️ Checkout and delivery details flow
+✔️ Items remain in cart until user manually removes them
+✔️ Fully client-side implementation (no backend)
 
-Add items to cart using interactive buttons
+🧠 What This Project Demonstrates
 
-Cart data persists using localStorage (items remain even after page refresh or revisit)
+📌 Event handling and DOM manipulation
 
-Checkout flow with delivery details page
+📌 Client-side state management in JavaScript
 
-Ability to remove items from the cart manually
+📌 Data persistence using localStorage
 
-Client-side state management without backend support
+📌 Multi-page frontend flow (menu → cart → checkout)
 
-🧠 Key Learnings
+📌 Building real-world UI logic without frameworks
 
-Handling DOM events and user interactions
-
-Managing application state in vanilla JavaScript
-
-Using localStorage to persist data across sessions
-
-Structuring frontend logic for multi-page flow
-
-Improving user experience with responsive layouts
-
-📂 Project Structure (Simplified)
+📂 Project Structure
 Pesto/
-├── index.html
-
-├── cart.html
-
-├── checkout.html
-
+├── index.html          # Home & menu page
+├── cart.html           # Cart page
+├── checkout.html       # Delivery details page
 ├── css/
-
-│   └── styles.css
-
+│   └── styles.css      # Styling
 ├── js/
+│   └── script.js       # Core application logic
+└── assets/             # Images and icons
 
-│   └── script.js
+💾 Cart Persistence Logic
 
-└── assets/
+Cart items are stored in localStorage as JSON data
 
-📌 How Cart Persistence Works
+On every page load, the cart state is restored
 
-Cart items are stored in localStorage as JSON
+Cart remains intact until the user explicitly removes items
 
-On page load, the cart state is restored from storage
+This ensures a session-independent shopping experience.
 
-Items remain in the cart until the user removes them manually
+📈 Future Enhancements
 
-🔮 Future Improvements
-
-Quantity increment/decrement for cart items
-
-Dynamic total price calculation
-
-Improved cart summary UI
-
-Migration to React for better state management
+🔹 Quantity increment and decrement controls
+🔹 Dynamic price calculation and order summary
+🔹 UI/UX improvements for cart page
+🔹 Migration to React for scalable state management
 
 👩‍💻 Author
 
